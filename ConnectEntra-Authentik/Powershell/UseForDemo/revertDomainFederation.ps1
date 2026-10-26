@@ -1,8 +1,8 @@
 
 # Command-line parameters. Dry run by default; pass -Execute to apply.
 param(
-    [string]$DomainName       = "timboslice.app",
-    [string]$ExpectedTenantId = "402c97db-17f2-417e-b4c1-3ec0fbf48127",
+    [string]$DomainName       = "<customDomain>",
+    [string]$ExpectedTenantId = "<yourTenantID>",
     [switch]$ClearImmutableId,
     [string]$ImmutableIdUser,
     [switch]$Execute

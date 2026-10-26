@@ -1,8 +1,8 @@
 
 
 param(
-    [string]$Domain           = "timboslice.app",
-    [string]$ExpectedTenantId = "402c97db-17f2-417e-b4c1-3ec0fbf48127",
+    [string]$Domain           = "<customDomain>",
+    [string]$ExpectedTenantId = "<yourTenantID>",
     [switch]$Execute
 )
 
