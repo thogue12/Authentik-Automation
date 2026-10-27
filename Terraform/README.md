@@ -305,7 +305,7 @@ it into the provider no manual "download from the UI" step. Retrieve it after ap
 terraform output -raw azure_entra_signing_cert_pem > authentik.pem
 terraform output azure_entra_signing_cert_name
 ```
-To set the file path to a specific or desired location edit the terraform.tfvars file in the root
+To set the file path to a specific or desired location, copy/edit the example.tf file in the root, this file represents the terraform.tfvars file.
 
 ```bash
 Windows
