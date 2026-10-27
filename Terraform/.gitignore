@@ -1,0 +1,44 @@
+# ---------------------------------------------------------------------------
+# Terraform .gitignore
+# Protects state (which stores secrets in plaintext) and local variable files.
+# ---------------------------------------------------------------------------
+# macOS system metadata
+.DS_Store
+**/.DS_Store
+# Local .terraform directories and plugin caches
+**/.terraform/*
+.terraform/
+.terraform.tfstate.lock.info
+.terraform.lock.hcl
+
+# State files — may contain secrets (Authentik token, Entra/Oracle/OAuth2 client secrets). Never commit.
+*.tfstate
+*.tfstate.*
+*.tfstate.backup.DS_Store
+# Crash log files
+crash.log
+crash.*.log
+
+# Variable files — hold real credentials/tokens. Commit only *.tfvars.example instead.
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# Terraform plan output (can contain sensitive values)
+*.tfplan
+*.plan
+
+# CLI config / credentials
+.terraformrc
+terraform.rc
+
+# Override files (local, machine-specific)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Sensitive key / cert material that might land here
+*.pem
+*.key
+*.env
